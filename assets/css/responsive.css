@@ -1,10 +1,5 @@
 /* Mobile and tablet */
 @media (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
-
     .hide-on-mobile-tablet {
         display: none;
     }
@@ -72,7 +67,7 @@
     }
 
     .footer__bottom-company-name {
-        margin-bottom: 6px;
+        margin: 0 0 8px;
     }
 
     .footer__bottom-info {
@@ -83,6 +78,11 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1032px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-tablet {
         display: none;
     }
@@ -91,10 +91,19 @@
         width: 80px;
         text-align: right;
     }
+
+    .footer-list-center {
+        width: 210px;
+    }
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -165,6 +174,32 @@
 
     .footer__main-footer-container {
         padding: 0 16px;
+    }
+
+    .footer__heading,
+    .footer-list-item {
+        text-align: center;
+    }
+
+    .footer__download {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__download-apps {
+        flex: unset;
+    }
+
+    .footer__download-apps-link {
+        padding: 6px 8px;
+    }
+
+    .footer-list-center {
+        justify-content: center;
+    }
+
+    .footer-list>.footer-list-item:last-child {
+        margin-left: -8px;
     }
 
 }
