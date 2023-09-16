@@ -38,6 +38,47 @@
     .header__sort-bar {
         display: flex;
     }
+
+    .mobile-category {
+        display: block;
+    }
+
+    .app__content {
+        padding-top: 8px;
+    }
+
+    .footer__top {
+        display: none;
+    }
+
+    .footer__empty {
+        display: none;
+    }
+
+    .footer__country {
+        display: none;
+    }
+
+    .footer__bottom {
+        padding: 8px 0;
+    }
+
+    .footer__bottom-policy-list {
+        display: none;
+    }
+
+    .footer__bottom-certification-list {
+        display: none;
+    }
+
+    .footer__bottom-company-name {
+        margin-bottom: 6px;
+    }
+
+    .footer__bottom-info {
+        display: none;
+    }
+
 }
 
 /* Tablet */
@@ -67,6 +108,10 @@
         width: unset;
     }
 
+    .header__logo-img {
+        width: 110px;
+    }
+
     .header__search {
         position: fixed;
         top: var(--header-height);
@@ -78,6 +123,18 @@
         z-index: 1;
         animation: mobileSearchSideIn 0.3s linear;
         display: none;
+    }
+
+    @keyframes mobileSearchSideIn {
+        from {
+            top: calc(var(--header-height) / 2);
+            opacity: 0;
+        }
+
+        to {
+            top: var(--header-height);
+            opacity: 1;
+        }
     }
 
     .header__mobile-search {
@@ -106,15 +163,8 @@
         margin: 0 4px;
     }
 
-    @keyframes mobileSearchSideIn {
-        from {
-            top: calc(var(--header-height) / 2);
-            opacity: 0;
-        }
-
-        to {
-            top: var(--header-height);
-            opacity: 1;
-        }
+    .footer__main-footer-container {
+        padding: 0 16px;
     }
+
 }
