@@ -181,6 +181,15 @@
         text-align: center;
     }
 
+    /* Fix */
+    .footer__heading {
+        margin: 0;
+    }
+
+    .footer-list-item__link {
+        margin: 4px 0;
+    }
+
     .footer__download {
         display: flex;
         justify-content: center;
