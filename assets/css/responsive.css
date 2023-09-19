@@ -54,6 +54,10 @@
         display: none;
     }
 
+    .footer__center-wraper {
+        display: flex;
+    }
+
     .footer__bottom {
         padding: 8px 0;
     }
@@ -181,15 +185,6 @@
         text-align: center;
     }
 
-    /* Fix */
-    .footer__heading {
-        margin: 0;
-    }
-
-    .footer-list-item__link {
-        padding: 4px 0;
-    }
-
     .footer__download {
         display: flex;
         justify-content: center;
@@ -203,9 +198,12 @@
         padding: 6px 8px;
     }
 
+
+
     .footer-list-center {
         justify-content: center;
     }
+
 
     .footer-list>.footer-list-item:last-child {
         margin-left: -8px;
